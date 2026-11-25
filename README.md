@@ -1,6 +1,6 @@
-### 2.14 LAB: Longest common subsequence
+# 2.14 LAB: Longest common subsequence
 
-#### Overview
+## Overview
 
 The longest common substring algorithm is presented elsewhere in this book.  The longest common subsequence algorithm is similar.  Unlike a substring, a subsequence need not be continuous.  Ex: "ARTS" is a subsequence of ALGORITHMS, but is not a substring.
 
@@ -13,7 +13,7 @@ A dynamic programming matrix can be used to solve the longest common subsequence
 
 Each algorithm uses 0 for out of bounds entries.  Ex: When computing matrix[0][0] for a character match, 0 is used instead of trying to access matrix[-1][-1].
 
-#### Sample Matrix
+## Sample Matrix
 
 The image below shows the longest common subsequence matrix for strings "ALASKAN" and "BANANAS".  Entries corresponding to a character match are highlighted.
 
@@ -21,11 +21,11 @@ The image below shows the longest common subsequence matrix for strings "ALASKAN
 
 The largest number in the matrix indicates the length of the longest common subsequence.  Ex: The largest entry in the matrix above is 3, so the longest common subsequence between "ALASKAN" and "BANANAS" is 3 characters long.
 
-#### Multiple longest common subesquences
+## Multiple longest common subesquences
 
 A pair of strings may have more than one longest common subsequence.  Ex: "ALASKAN" and "BANANAS" have three longest common subsequences: "AAA", "AAN", and "AAS".
 
-#### Step 1: Determine how to make the LCS set from the matrix
+## Step 1: Determine how to make the LCS set from the matrix
 
 The matrix can be used to build a set of all longest common subsequences.  Before writing any code, consider two options for building the LCS set:
 
